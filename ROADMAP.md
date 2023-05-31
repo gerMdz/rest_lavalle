@@ -9,5 +9,11 @@ El cliente tiene que tener en el header
 > 
 > Accept: application/json
 
+Convenciones
+
+Las tablas en minúsculas, inglés y plural.
+
+Las llaves foráneas en singular `nombre_id`
+
 ### Next
-[Cap 6](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/maquetar-la-bbdd)
+[Cap 7](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/crear-el-modelo-fisico)
