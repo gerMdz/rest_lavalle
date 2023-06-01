@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTagRequest;
 use App\Http\Requests\UpdateTagRequest;
-use App\Models\Tag;
+use App\Models\Etiqueta;
 
 class TagController extends Controller
 {
@@ -35,7 +35,7 @@ class TagController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Tag $tag)
+    public function show(Etiqueta $tag)
     {
         //
     }
@@ -43,7 +43,7 @@ class TagController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Tag $tag)
+    public function edit(Etiqueta $tag)
     {
         //
     }
@@ -51,7 +51,7 @@ class TagController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTagRequest $request, Tag $tag)
+    public function update(UpdateTagRequest $request, Etiqueta $tag)
     {
         //
     }
@@ -59,7 +59,7 @@ class TagController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Tag $tag)
+    public function destroy(Etiqueta $tag)
     {
         //
     }

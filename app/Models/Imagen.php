@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Imagen extends Model
 {
     use HasFactory;
 
-    const DRAFT = 1;
-    const PUBLISHED = 2;
+    protected $table = 'images';
 }

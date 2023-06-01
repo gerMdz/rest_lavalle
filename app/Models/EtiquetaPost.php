@@ -4,7 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class PostTag extends Pivot
+class EtiquetaPost extends Pivot
 {
     //
+
+    protected $table = 'post_tag';
 }

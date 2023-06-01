@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Etiqueta;
+use App\Models\Imagen;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class TagPolicy
+class ImagePolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class TagPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Etiqueta $tag): bool
+    public function view(User $user, Imagen $image): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class TagPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Etiqueta $tag): bool
+    public function update(User $user, Imagen $image): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class TagPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Etiqueta $tag): bool
+    public function delete(User $user, Imagen $image): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class TagPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Etiqueta $tag): bool
+    public function restore(User $user, Imagen $image): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class TagPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Etiqueta $tag): bool
+    public function forceDelete(User $user, Imagen $image): bool
     {
         //
     }

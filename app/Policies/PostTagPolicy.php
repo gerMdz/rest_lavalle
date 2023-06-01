@@ -2,7 +2,7 @@
 
 namespace App\Policies;
 
-use App\Models\PostTag;
+use App\Models\EtiquetaPost;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
@@ -19,7 +19,7 @@ class PostTagPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, PostTag $postTag): bool
+    public function view(User $user, EtiquetaPost $postTag): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class PostTagPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, PostTag $postTag): bool
+    public function update(User $user, EtiquetaPost $postTag): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class PostTagPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, PostTag $postTag): bool
+    public function delete(User $user, EtiquetaPost $postTag): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class PostTagPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, PostTag $postTag): bool
+    public function restore(User $user, EtiquetaPost $postTag): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class PostTagPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, PostTag $postTag): bool
+    public function forceDelete(User $user, EtiquetaPost $postTag): bool
     {
         //
     }

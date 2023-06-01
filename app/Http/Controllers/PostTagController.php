@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostTagRequest;
 use App\Http\Requests\UpdatePostTagRequest;
-use App\Models\PostTag;
+use App\Models\EtiquetaPost;
 
 class PostTagController extends Controller
 {
@@ -35,7 +35,7 @@ class PostTagController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PostTag $postTag)
+    public function show(EtiquetaPost $postTag)
     {
         //
     }
@@ -43,7 +43,7 @@ class PostTagController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(PostTag $postTag)
+    public function edit(EtiquetaPost $postTag)
     {
         //
     }
@@ -51,7 +51,7 @@ class PostTagController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePostTagRequest $request, PostTag $postTag)
+    public function update(UpdatePostTagRequest $request, EtiquetaPost $postTag)
     {
         //
     }
@@ -59,7 +59,7 @@ class PostTagController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(PostTag $postTag)
+    public function destroy(EtiquetaPost $postTag)
     {
         //
     }
