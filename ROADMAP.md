@@ -19,4 +19,4 @@ Las tablas en minúsculas, inglés y plural.
 Las llaves foráneas en singular `nombre_id`
 
 ### Next
-[Cap 8](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/generando-relaciones)
+[Cap 9](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/introducir-datos-falsos)
