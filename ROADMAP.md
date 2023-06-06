@@ -18,5 +18,22 @@ Las tablas en minúsculas, inglés y plural.
 
 Las llaves foráneas en singular `nombre_id`
 
+Crea factories
+```bash
+php artisan make:factory ImageFactory
+```
+
+Crea acceso directo a public/storage
+- se debe cambiar el '.env' en FILESYSTEM_DISK
+```bash
+php artisan storage:link
+```
+
+Crea seeder
+
+```bash
+php artisan make:seeder UserSeeder
+```
+
 ### Next
-[Cap 9](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/introducir-datos-falsos)
+[Cap 10](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/solucionando-posible-error-con-faker)

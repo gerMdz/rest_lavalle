@@ -11,6 +11,10 @@ class Categoria extends Model
     use HasFactory;
 
     protected $table = 'categories';
+    protected $fillable = [
+        'nombre',
+        'urlLink'
+    ];
 
     public function posts(): HasMany
     {
