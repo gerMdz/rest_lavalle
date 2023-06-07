@@ -36,4 +36,5 @@ php artisan make:seeder UserSeeder
 ```
 
 ### Next
-[Cap 10](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/solucionando-posible-error-con-faker)
+[Cap 12](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/recibir-peticiones-y-generar-respuestas-para-el-recurso-category)
+
