@@ -29,7 +29,7 @@ class CategoriesController extends Controller
      */
     public function store(StoreCategoriesRequest $request)
     {
-        //
+
     }
 
     /**
