@@ -35,7 +35,10 @@ class CategoriaController extends Controller
      */
     public function show(Categoria $categoria)
     {
-        return $categoria;
+
+        $categ = Categoria::Incluye()->findOrFail($categoria->id);
+
+        return $categ;
     }
 
     /**
