@@ -51,5 +51,7 @@ public function scopeValorDeLaUrl(Builder $qb)
 
 ### Next
 
-[Cap 14](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/filtrar-recursos)
+[Cap 16](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/paginar-recursos)
+
+
 

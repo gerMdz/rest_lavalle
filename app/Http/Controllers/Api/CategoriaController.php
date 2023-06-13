@@ -14,7 +14,10 @@ class CategoriaController extends Controller
      */
     public function index(): Collection
     {
-        return Categoria::all();
+        return Categoria::Incluye()
+            ->filtro()
+            ->orden()
+            ->get();
     }
 
     /**

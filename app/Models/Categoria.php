@@ -18,6 +18,8 @@ class Categoria extends Model
     ];
 
     protected $permiteIncluye = ['posts', ['posts.usuario']];
+    protected $permiteFiltro = ['id','nombre', 'urlLink' ];
+    protected $permiteOrdenar = ['id','nombre', 'urlLink' ];
 
     public function posts(): HasMany
     {
@@ -41,6 +43,50 @@ class Categoria extends Model
 
         $qb->with($relaciones);
 
+    }
 
+    public function scopeFiltro(Builder $qb)
+    {
+        if (empty($this->permiteFiltro) || empty(request('filtro'))) {
+            return;
+        }
+
+        $filtros = request('filtro');
+
+        $filtrosPermitidos = collect($this->permiteFiltro);
+
+
+        foreach ($filtros as $k => $v){
+            if($filtrosPermitidos->contains($k)){
+                $qb->where(
+                    $k,'LIKE' ,'%'.$v.'%'
+                );
+            }
+        }
+    }
+
+    public function scopeOrden(Builder $qb)
+    {
+        if (empty($this->permiteOrdenar) || empty(request('orden'))) {
+            return;
+        }
+
+        $ordenes = explode(',', request('orden'));
+
+        $ordenesPermitidos = collect($this->permiteOrdenar);
+
+
+        foreach ($ordenes as $k ){
+            $vector = 'asc';
+            if(str_starts_with($k, '!')){
+                $vector = 'desc';
+                $k = substr($k, 1);
+            }
+            if($ordenesPermitidos->contains($k)){
+                $qb->orderBy(
+                    $k, $vector
+                );
+            }
+        }
     }
 }
