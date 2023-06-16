@@ -17,6 +17,8 @@ class PostResource extends JsonResource
     public function toArray(Request $request): array
     {
 //        dd($this->user_id);
+
+//        dd($this->estado);
         return [
             'id' => $this->id,
             'nombre' => $this->nombre,
@@ -24,6 +26,7 @@ class PostResource extends JsonResource
             'resumen' => $this->resumen,
             'body' => $this->body,
             'estado' => $this->estado ==1? 'Borrador': 'Publicado',
+//            'estado' => $this->estado,
             'usuario' => UserResource::make($this->whenLoaded('user')),
             'catagoria' => CategoriaResource::make($this->whenLoaded('categories'))
 

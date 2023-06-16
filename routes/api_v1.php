@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CategoriaController;
+use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\RegisterController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -33,3 +34,4 @@ Route::post('registro',[RegisterController::class, 'store'] )->name('api.v1.regi
 // Segunda forma de generar rutas api
 
 Route::apiResource('categorias', CategoriaController::class)->names('api.v1.categorias');
+Route::apiResource('posts', PostController::class)->names('api.v1.posts');

@@ -34,7 +34,8 @@ class CategoriaController extends Controller
             'urlLink' => 'required|max:255|unique:categories'
         ]);
 
-        return Categoria::create($request->all());
+        $categ =  Categoria::create($request->all());
+        return CategoriaResource::make($categ);
     }
 
     /**
@@ -59,8 +60,8 @@ class CategoriaController extends Controller
             'urlLink' => 'required|max:255|unique:categories,urlLink,'.$categoria->id,
         ]);
 
-         $categoria->update($request->all());
-         return $categoria;
+         $categ = $categoria->update($request->all());
+        return CategoriaResource::make($categ);
     }
 
     /**
@@ -68,9 +69,9 @@ class CategoriaController extends Controller
      */
     public function destroy(Categoria $categoria)
     {
-        $categoria->delete();
+        $categ = $categoria->delete();
 
-        return $categoria;
+        return CategoriaResource::make($categ);
 
     }
 }
