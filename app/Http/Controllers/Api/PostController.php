@@ -11,6 +11,12 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:api')->except(['index', 'show']);
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -61,16 +67,20 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        $request->validate([
+        $data = $request->validate([
             'nombre' => 'required|max:255',
             'urlLink' => 'required|max:255|unique:post,urlLink,'.$post->id,
             'resumen' => 'required',
             'body' => 'required',
             'categoria_id' => 'required|exists:categories,id',
-            'user_id' => 'required|exists:users,id'
+
         ]);
 
-        $posts = $post->update($request->all());
+        $usuario_auth = auth()->user();
+        $data['user_id'] = $usuario_auth->id;
+
+
+        $posts = $post->update($data);
         return CategoriaResource::make($posts);
     }
 

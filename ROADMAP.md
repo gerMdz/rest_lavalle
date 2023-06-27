@@ -49,7 +49,13 @@ use Illuminate\Database\Eloquent\Builder;
 public function scopeValorDeLaUrl(Builder $qb)
 ```
 
+Crea clientes con uuid
+```php
+php artisan passport:install --uuids
+```
+
+
 ### Next
 
-[Cap 20](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/instalar-laravel-passport)
+[Cap 21](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/instalar-laravel-passport-ii)
 
