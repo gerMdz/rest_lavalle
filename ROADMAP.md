@@ -53,9 +53,18 @@ Crea clientes con uuid
 ```php
 php artisan passport:install --uuids
 ```
+Regenerar claves de passport (es uno u otro)
+```php
+php artisan passport:keys
+php artisan vendor:publish --tag-passport-config
+```
 
+Generar cliente tipo password
+```php
+php artisan passport:client --password
+```
 
 ### Next
 
-[Cap 21](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/instalar-laravel-passport-ii)
+[Cap 23](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/instalar-laravel-breeze-en-el-cliente)
 
