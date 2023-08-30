@@ -66,5 +66,7 @@ php artisan passport:client --password
 
 ### Next
 
-[Cap 23](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/instalar-laravel-breeze-en-el-cliente)
+Se utilizan 2 proyectos para esto
+
+[Cap 24](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/crear-endpoint-para-hacer-login)
 
