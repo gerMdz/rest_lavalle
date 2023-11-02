@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CategoriaController;
+use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\RegisterController;
 use Illuminate\Http\Request;
@@ -22,6 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/', function (){return 'prueba';})->name('api.v1.index');
+Route::post('login',[LoginController::class, 'store'] )->name('api.v1.login');
 Route::post('registro',[RegisterController::class, 'store'] )->name('api.v1.register');
 
 // Una forma de generar rutas api
