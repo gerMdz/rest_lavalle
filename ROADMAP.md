@@ -71,5 +71,7 @@ Se utilizan 2 proyectos para esto
 * Esta parte es la api
 * El otro proyecto Proyectos/Cursos/clientRest
 
-[Cap 26](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/iniciar-sesion-desde-el-cliente)
+
+
+[Cap 27](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/iniciar-sesion-desde-el-cliente-ii)
 
