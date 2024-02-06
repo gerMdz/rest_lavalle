@@ -73,5 +73,5 @@ Se utilizan 2 proyectos para esto
 
 
 
-[Cap 27](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/iniciar-sesion-desde-el-cliente-ii)
+[Cap 28](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/registrar-usuario-desde-el-cliente)
 
