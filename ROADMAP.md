@@ -73,5 +73,5 @@ Se utilizan 2 proyectos para esto
 
 
 
-[Cap 28](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/registrar-usuario-desde-el-cliente)
+[Cap 30](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/proteger-credenciales)
 

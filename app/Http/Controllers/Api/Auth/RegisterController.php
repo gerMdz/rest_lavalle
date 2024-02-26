@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\Auth;
 
 use App\Http\Controllers\Controller as BaseController;
+use App\Http\Resources\UserResource;
 use App\Models\User;
-use Illuminate\Contracts\Routing\ResponseFactory;
-use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class RegisterController extends baseController
 {
@@ -19,10 +17,12 @@ class RegisterController extends baseController
             'password' => 'required|string|min:8|confirmed'
         ]);
 
+        $user = User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => bcrypt($request->password)]
+        );
 
-
-        $user = User::create($request->all());
-
-        return response($user, 200);
+        return UserResource::make($user);
     }
 }
