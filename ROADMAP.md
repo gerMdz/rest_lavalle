@@ -71,7 +71,7 @@ Se utilizan 2 proyectos para esto
 * Esta parte es la api
 * El otro proyecto Proyectos/Cursos/clientRest
 
+Este usa el puerto 8080
 
-
-[Cap 30](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/proteger-credenciales)
+[Cap 32](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/mandar-acces-token-en-las-peticiones)
 
