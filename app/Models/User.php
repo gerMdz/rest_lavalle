@@ -47,7 +47,7 @@ class User extends Authenticatable
     ];
 
 
-//    Relación Uno a muchos
+//    Relación Uno a muchos HasMany
 
     public function posts(): HasMany
     {

@@ -31,17 +31,26 @@ class Post extends Model
     // Relación uno a 'muchos' inversa.
     public function usuario(): BelongsTo
     {
-        // Relación inversa
+        // Relación inversa con HasMay
         return $this->belongsTo(User::class);
     }
 
+    public function user(): BelongsTo
+    {
+        // Relación inversa con HasMay
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * @return BelongsTo
+     */
     public function categoria(): BelongsTo
     {
-        // Relación inversa
+        // Relación inversa con HasMay
         return $this->belongsTo(Categoria::class);
     }
 
-    // Muchos a muchos
+    // Muchos a muchos BelongsToMany
 
     public function etiquetas(): BelongsToMany
     {
@@ -50,6 +59,9 @@ class Post extends Model
 
     // Relación uno a 'muchos' polimórficas
 
+    /**
+     * @return MorphToMany
+     */
     public function imagenes(): MorphToMany
     {
         return $this->morphToMany(Imagen::class, 'imageable');
