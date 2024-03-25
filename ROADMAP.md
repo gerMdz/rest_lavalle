@@ -73,5 +73,5 @@ Se utilizan 2 proyectos para esto
 
 Este usa el puerto 8080
 
-[Cap 32](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/mandar-acces-token-en-las-peticiones)
+[Cap 36](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/crear-formulario-para-crear-nuevo-cliente)
 
