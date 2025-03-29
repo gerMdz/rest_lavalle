@@ -73,5 +73,5 @@ Se utilizan 2 proyectos para esto
 
 Este usa el puerto 8080
 
-[Registrar nuevos clientes](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/registrar-nuevos-clientes)
+[Mostrar el estado de los clientes](https://codersfree.com/courses-status/aprende-a-crear-una-api-restful-con-laravel/mostrar-listado-de-clientes)
 
